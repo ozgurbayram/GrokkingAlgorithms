@@ -17,13 +17,13 @@ def binarySearch(a,i):
 			high = mid-1
 			# Theses 3 line of code just for visualization
 			time.sleep(1)
-			print(arr[low:high])
+			print(a[low:high])
 			count +=1
 		else:
 			low = mid +1
 			# Theses 3 line of code just for visualization
 			time.sleep(1)
-			print(arr[low:high])
+			print(a[low:high])
 			count +=1
 
 	return None
