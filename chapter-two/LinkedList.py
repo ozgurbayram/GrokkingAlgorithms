@@ -20,16 +20,20 @@ class LinkedList:
     
     def reverse_linked_list(self)-> str:
         pass
-    
-if __name__ == '__main__':
-    a = Node("hello linked list")
-    b = Node('hello world')
-    c = Node('c node ')
 
+if __name__ == '__main__':
+    a = Node("a node")
+    b = Node('b node')
+    c = Node('c node')
     a.next= b
     b.next =c
 
-    linked_list = LinkedList()    
+    linked_list = LinkedList() 
     linked_list.head = a
+
+    # insert into head of linked list     
+    d= Node('d node')
+    d.next = linked_list.head
+    linked_list.head = d
 
     print(linked_list)
