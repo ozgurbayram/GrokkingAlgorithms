@@ -6,6 +6,8 @@ class Node:
     def __repr__(self) -> str:
         return self.data
 
+# Todo add delete method to the linked list class
+
 class LinkedList:
     def __init__(self,head=None) -> None:
         self.head = head
