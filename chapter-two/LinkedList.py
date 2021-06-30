@@ -18,22 +18,22 @@ class LinkedList:
             node = node.next
         return f'->'.join(nodes)
     
-    def reverse_linked_list(self)-> str:
-        pass
+    def insert(self,value):
+        new_node = Node(value)
+        node = self.head
+        if node is None:
+            self.head = new_node
+            return
 
+        while node is not None:
+            if node is None:
+                node = new_node
+                return
+            node = node.next
+            
 if __name__ == '__main__':
-    a = Node("a node")
-    b = Node('b node')
-    c = Node('c node')
-    a.next= b
-    b.next =c
-
     linked_list = LinkedList() 
-    linked_list.head = a
-
-    # insert into head of linked list     
-    d= Node('d node')
-    d.next = linked_list.head
-    linked_list.head = d
-
+    linked_list.insert('dsada')
+    linked_list.insert("313")
+    linked_list.insert('dsadas')
     print(linked_list)
