@@ -7,6 +7,7 @@ class Node:
     def __repr__(self) -> str:
         return self.data
 
+# Todo: complete methods
 class DoublyLinkedList:
     def __init__(self) -> None:
         pass
@@ -24,4 +25,3 @@ if __name__ == '__main__':
     
     first_node.next = second_node
     second_node.prev = first_node
-

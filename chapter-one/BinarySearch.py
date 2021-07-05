@@ -1,5 +1,6 @@
 import time
 ## Binary Searhch
+
 def binarySearch(a,i):
 	# Low and High index's of array
 	low = 0 
@@ -30,5 +31,4 @@ def binarySearch(a,i):
 			
 if __name__ == '__main__':
 	arr = list(range(64))
-
 	print(binarySearch(arr,5))
